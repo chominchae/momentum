@@ -1,0 +1,146 @@
+/* 기본적인 Reset 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 페이지 전체 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    /*background-color:*/
+    color:white;
+    text-align: center;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+
+}
+
+/* 시계 스타일 */
+#clock {
+    font-size: 3em;
+    margin-bottom: 20px;
+    margin-top:70px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 투명한 검은색 오버레이 */
+    z-index: -1; /* 오버레이를 배경으로 보이도록 설정 */
+}
+
+/* 로그인 폼 스타일 */
+#login-form {
+    margin: 20px 0;
+    width:30%;
+}
+
+#login-form input[type="text"] {
+    text-align:center;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ddddddd0;
+    width: calc(100% - 22px); /* 전체 너비에서 padding과 border의 합계만큼을 제외 */
+}
+
+#login-form input[type="submit"] {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background:none;
+    margin-top: 10px;
+    color:white;
+    font-size:11px;
+}
+
+#login-form input[type="submit"]:hover {
+    color:gray;
+}
+
+/* 인사말 스타일 */
+#greeting {
+    font-size: 3.4em;
+    margin: 20px 0;
+}
+
+#quote{
+    margin-top:auto;
+}
+
+#todo-form {
+    width:30%;
+}
+
+/* 할 일 목록 스타일 */
+#todo-form input {
+    padding: 10px;
+    font-size: 1em;
+    border:none;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    background-color: #ddddddd0;
+}
+
+input::placeholder{
+    color:rgb(255, 255, 255);
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+    width: 27%;
+}
+
+#todo-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    height:30px ;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(197, 177, 177, 0.227);
+    z-index: -1; /* 오버레이를 배경으로 보이도록 설정 */
+}
+
+#todo-list li button{
+    border: none;
+    color:white;
+    background-color: rgb(197, 177, 177,0);
+    margin-left:10px;
+}
+
+/* 인용구 및 저자 스타일 */
+#author, #weather {
+    margin: 20px 0;
+}
+
+#quote span, #author span, #weather span {
+    display: block;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+/* 숨김 클래스 */
+.hidden {
+    display: none;
+}
+
+#weather{
+    position:absolute;
+    top:20px;
+    right:20px;
+    margin-right:20px;
+}
